@@ -1,0 +1,160 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+
+}
+.page-header{
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+
+    .container-button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 80px;
+        
+    }
+}
+.site-nav__list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+    .site-nav__link{
+        color: #212121;
+
+        &:hover,
+        &:focus{
+            color: #2196F3;
+        }
+
+    }
+    .active{
+    color: #2196F3;
+    }
+}
+.site-nav__link{
+    text-decoration: none;
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    color: #212121;
+
+
+  
+}
+.auth-nav__list{
+    list-style: none;
+    padding: 0%;
+
+    .auth-nav__link{
+        
+            &:hover,
+            &:focus {
+            color: #2196F3;
+            }
+    }
+}
+.auth-nav__link{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    
+    color: #757575;
+
+  
+}
+.network-list{
+    list-style: none;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px;
+    padding: 0px;
+ 
+
+}
+.network-link{
+    text-decoration: none;
+    color: #2196F3;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+
+
+    margin-left: 20px;
+        
+  
+    
+
+}
+
+
+.button-menu{
+    display: inline-flex;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    
+    .icon-cross{
+        display: none;
+    }
+
+
+    
+}
+.button-menu.is-open.icon-cross {
+    display: block;
+}
+.button-menu.is-open.icon-menu{
+    display: none;
+}
+
+.menu-svg{
+    width: 24px;
+    height: 20px;
+}
+.menu-container{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+
+    background-color: tomato;
+
+
+    .is-open{
+        display: block;
+    }
+
+}
+.network-item{
+    display: flex;
+    flex-wrap: nowrap;
+}

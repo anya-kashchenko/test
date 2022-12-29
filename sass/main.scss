@@ -1,1 +1,10 @@
-@import "./mobile/index";
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./components/logo";
+@import "./components/page-header";
+@import "./components/hero-section";
+@import "./components/skills-section";
+@import "./components/teams-section";
+@import "./components/section-clients";
+@import "./components/modal";
+@import "./components/footer";

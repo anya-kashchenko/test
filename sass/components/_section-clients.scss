@@ -1,0 +1,14 @@
+.section-clients__list{
+    list-style: none;
+}
+.section-clients__item{
+    width: 210px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

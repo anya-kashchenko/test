@@ -1,0 +1,39 @@
+.skills-section__list{
+    list-style: none;
+}
+
+.skills-section__icon{
+    width: 450px;
+    height: 120px;
+    background-color: #F5F4FA;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills-section__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #212121;
+}
+.skills-section__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+}
+.skills-section__svg{
+  
+}
