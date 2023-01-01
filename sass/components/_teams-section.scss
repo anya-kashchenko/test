@@ -1,3 +1,10 @@
+.teams-section
+{
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+}
+
 .teams-section__list{
     list-style: none;
 }

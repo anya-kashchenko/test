@@ -1,3 +1,9 @@
+.skills-section{
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+}
+
 .skills-section__list{
     list-style: none;
 }

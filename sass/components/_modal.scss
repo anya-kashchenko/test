@@ -77,6 +77,10 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
     position: absolute;
     top: 30px;
     left: 10px;
+
+    &:hover{
+        fill: #2196f3;
+    }
 }
 .comment-text{
     
@@ -87,6 +91,8 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
     border: 1px solid rgba(33, 33, 33, .2);
     border-radius: 4px;
     margin-bottom: 10px;
+
+   
 }
 .checkbox{
 font-family: 'Roboto';
@@ -151,3 +157,5 @@ font-family: 'Roboto';
     border-color: #2196f3;
     
 }
+
+

@@ -1,5 +1,13 @@
+.section-clients{
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+}
+
 .section-clients__list{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap
 }
 .section-clients__item{
     width: 210px;
@@ -10,5 +18,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+            border: 1px solid#2196F3;
+        }
+    
+        &:hover .section-clients__icon {
+            fill: #2196F3;
+    
+        }
 }
 
+.section-clients__icon {
+    fill: #AFB1B8;
+    ;
+
+    &:hover {
+        fill: #2196f3;
+    }
+}
