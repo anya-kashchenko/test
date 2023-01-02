@@ -51,16 +51,18 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
     position: relative;
     width: 370px;
 
-    &:hover,
-    &:focus {
-        border-color: #2196f3;
-    }
+ 
 }
 .form-input{
     padding-left: 30px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 40px;
+
+    &:focus {
+        border-color: #2196F3;
+        outline: none;
+    }
     
   
 }
@@ -96,8 +98,8 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
     top: 30px;
     left: 10px;
 
-    &:hover{
-        fill: #2196f3;
+    .form__input &:focus { 
+        fill:#2196F3;
     }
 }
 .comment-text{
@@ -109,6 +111,11 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
     border: 1px solid rgba(33, 33, 33, .2);
     border-radius: 4px;
     margin-bottom: 10px;
+
+    &:focus {
+        border-color: #2196F3;
+        outline: none;
+    }
 
    
 }
@@ -171,9 +178,6 @@ font-family: 'Roboto';
     border-color: rgba(0, 0, 0, 0.1);
 
 }
-.form-input:hover, :focus{
-    border-color: #2196f3;
-    
-}
+
 
 

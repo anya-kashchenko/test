@@ -1,12 +1,29 @@
-.teams-section
-{
-    @media screen and (min-width: 480px) {
-            width: 480px;
-        }
+.teams-section{
+    
 }
+.teams-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
 
 .teams-section__list{
     list-style: none;
+    padding: 0;
 }
 .teams-section__title{
     font-family: 'Roboto';
