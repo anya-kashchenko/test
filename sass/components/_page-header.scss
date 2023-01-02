@@ -25,7 +25,8 @@
 .site-nav__list{
     list-style: none;
     padding: 0px;
-    margin: 0px;
+ 
+    margin-bottom:302px ;
 
     .site-nav__link{
         color: #212121;
@@ -40,6 +41,11 @@
     color: #2196F3;
     }
 }
+.site-nav__item{
+    &:not(:last-child) {
+         margin-bottom: 35px;
+        }
+}
 .site-nav__link{
     text-decoration: none;
    
@@ -52,10 +58,13 @@
     letter-spacing: 0.02em;
     
     color: #212121;
+ 
+    
 
 
   
 }
+
 .auth-nav__list{
     list-style: none;
     padding: 0%;
@@ -79,15 +88,25 @@
     
     color: #757575;
 
+
   
+
+  
+}
+.auth-nav__item{
+    &:not(:last-child) {
+            margin-bottom: 32px;
+        }
 }
 .network-list{
     list-style: none;
     
     display: flex;
     flex-wrap: nowrap;
-    margin: 0px;
+    justify-content: center;
+   
     padding: 0px;
+    margin-top: 64px;
  
 
 }
@@ -99,14 +118,15 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-
-
-
-    margin-left: 20px;
-        
-  
     
 
+    
+
+}
+.network-item{
+    &:not(:last-child) {
+            margin-right: 20px;
+        }
 }
 
 
@@ -116,15 +136,19 @@
     padding: 0px;
     border: none;
     background-color: transparent;
+
+    @media screen and (min-width:767px) {
+            display: none;
+        }
     
-    .icon-cross{
-        display: none;
-    }
 
 
     
 }
-.button-menu.is-open.icon-cross {
+.button-menu.icon-cross{
+    display: none;
+}
+.button-menu.is-open.icon-cross{
     display: block;
 }
 .button-menu.is-open.icon-menu{
@@ -134,26 +158,40 @@
 .menu-svg{
     width: 24px;
     height: 20px;
+    
+}
+
+.menu-container.is-open {
+    display: block;
 }
 .menu-container{
+    
+    display: block;
     position: absolute;
     top: 100%;
     left: 0%;
     width: 100%;
-    padding-bottom: 48px;
-    padding-top: 48px;
-    padding-left: 40px;
-    padding-right: 40px;
+
+    
+    text-align: center;
 
 
     background-color: tomato;
 
+    @media screen and (max-width:480px) {
+  
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+        }
+   @media screen and (min-width: 767px) {
+       display: none;
+   }
 
-    .is-open{
-        display: block;
-    }
 
 }
+
 .network-item{
     display: flex;
     flex-wrap: nowrap;
