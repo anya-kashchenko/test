@@ -21,13 +21,14 @@
 
     padding-top: 60px;
     padding-bottom: 60px;
+  
 
 
 }
 .container-address{
     text-align: center;
     @media screen and (max-width: 767px) {
-        margin-bottom: 60px;
+        
     }
 
     @media screen and (min-width: 768px) {
@@ -107,8 +108,9 @@
     flex-wrap: wrap;
     align-content: flex-end;
     justify-content: center;
+
     @media screen and (max-width: 767px) {
-        margin-bottom: 60px;
+
     }
 
     @media screen and (min-width: 768px) {
