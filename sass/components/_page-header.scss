@@ -32,9 +32,10 @@
 }
 .site-nav__list{
     list-style: none;
-    padding: 0px;
+    
  
     margin-bottom:302px ;
+    padding-left: 40px;
 
     .site-nav__link{
         color: #212121;
@@ -62,7 +63,7 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
-    text-align: center;
+    
     letter-spacing: 0.02em;
     
     color: #212121;
@@ -144,6 +145,8 @@
     padding: 0px;
     border: none;
     background-color: transparent;
+    width: 50px;
+    background-color: #2196F3;
 
     @media screen and (min-width:767px) {
             display: none;
@@ -156,10 +159,10 @@
 .button-menu.icon-cross{
     display: none;
 }
-.button-menu.is-open.icon-cross{
+.button-menu .is-open .icon-cross{
     display: block;
 }
-.button-menu.is-open.icon-menu{
+.button-menu .is-open .icon-menu{
     display: none;
 }
 
@@ -184,7 +187,7 @@
     text-align: center;
 
 
-    background-color: tomato;
+    background-color:#ffffff;
 
     @media screen and (max-width:480px) {
   

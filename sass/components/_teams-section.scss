@@ -1,5 +1,7 @@
 .teams-section{
-    
+    background: #F5F4FA;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .teams-container{
     margin-left: auto;
@@ -23,8 +25,19 @@
 
 .teams-section__list{
     list-style: none;
-    padding: 0;
+
 }
+.teams-section__item{
+    background-color: #fff
+    ;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+         margin-bottom: 30px;
+            }
+        }
+
+    
+    } 
 .teams-section__title{
     font-family: 'Roboto';
     font-style: normal;
@@ -32,8 +45,11 @@
     font-size: 28px;
     line-height: 33px;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    text-align: center;
     
     color: #212121;
+ 
 }
 .teams-section__name{
     font-family: 'Roboto';
@@ -43,6 +59,8 @@
     line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
     
     color: #212121;
 }
@@ -57,11 +75,13 @@
     
     color: #757575;
     text-align: center;
+
 }
 .social-networks {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 16px;
 }
 
 .social-networks__link {
