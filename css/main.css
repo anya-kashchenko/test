@@ -286,6 +286,12 @@ body.menu-open {
     margin: -15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .skills-section__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .skills-section__item:not(:last-child) {
@@ -364,6 +370,12 @@ body.menu-open {
 
 .teams-section__list {
   list-style: none;
+}
+@media screen and (min-width: 1200px) {
+  .teams-section__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .teams-section__item {
@@ -477,6 +489,12 @@ body.menu-open {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 1200px) {
+  .section-clients__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 
 .section-clients__item {
   width: calc((100% - 60px) / 2);
@@ -485,7 +503,7 @@ body.menu-open {
 }
 
 .section-clients__icon {
-  fill: #AFB1B8;
+  color: #AFB1B8;
 }
 
 .section-clients__link {
@@ -498,9 +516,11 @@ body.menu-open {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
-.section-clients__link:hover, .section-clients__link:focus {
-  color: #2196F3;
-  border-color: #2196F3;
+.section-clients__link:hover {
+  border: 1px solid #2196F3;
+}
+.section-clients__link:hover .section-clients__icon {
+  fill: #2196F3;
 }
 
 .backdrop {
@@ -525,6 +545,9 @@ body.menu-open {
   pointer-events: none;
 }
 
+.modal {
+  position: relative;
+}
 @media (min-width: 768px) {
   .modal {
     position: absolute;
@@ -658,14 +681,19 @@ body.menu-open {
 
 .button-close {
   position: absolute;
-  top: 100px;
-  right: 40px;
-  cursor: pointer;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
+  padding: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 50%;
   background-color: #FFFFFF;
-  border-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  cursor: pointer;
 }
 
 .footer-container {

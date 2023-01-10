@@ -26,6 +26,11 @@
 .teams-section__list{
     list-style: none;
 
+        @media screen and (min-width: 1200px) {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+
 }
 .teams-section__item{
     background-color: #fff
@@ -96,6 +101,8 @@
     &:hover {
         background-color: #2196F3;
     }
+
+    
 }
 
 .teams-section__item{
