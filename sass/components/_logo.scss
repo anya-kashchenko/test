@@ -1,5 +1,5 @@
 .logo{
-    color: #212121;
+    color:$primary-black-color;
     text-decoration: none;
 
     font-family: 'Raleway';
@@ -11,5 +11,27 @@
 
 }
 .logo span{
-   color: #2196F3;
+   color: $primary-blue-color;
+}
+.footer-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $primary-white-color;
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+}
+
+.footer-logo span {
+    color: $primary-blue-color;
 }

@@ -1,39 +1,25 @@
 .skills-section{
-   background-color:#FFFFFF;
+   background-color:$primary-white-color;
+
 }
 .skills-container{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    @extend %container;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        
-    }
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    
-   
-}
 }
 .skills-section__list{
-    list-style: none;
+    @extend %list;
     padding: 60px 15px 60px 15px;
     margin: 0px;
 
         @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        margin: -15px;
+        
     }
          @media screen and (min-width: 1200px) {
         display: flex;
         flex-wrap: nowrap;
+        margin: -15px;
       
         }
  
@@ -45,26 +31,33 @@
         &:not(:last-child) {
             margin-bottom: 30px;
         }
-      
+    }
+        @media screen and (min-width: 768px) {
+        width: calc(100% - 4 * 10px)/4;
+        }
         
 
-}
+
 }
 .skills-section__icon{
     
-    background-color: #F5F4FA;
+    background-color: $primary-gray-bcg;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .skills-section__title{
-   
-    margin-bottom: 10px;
-
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
+    
+    margin-bottom: 10px;
     color: #000;
     display: flex;
     justify-content: center;
@@ -86,10 +79,11 @@
     font-size: 14px;
     line-height: 24px;
 
+
     letter-spacing: 0.03em;
     
-    color: #757575;
-    text-align: left;
+    color:$primary-text-color;
+
     line-height: 1.71;
     
 }

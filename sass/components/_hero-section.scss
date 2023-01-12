@@ -9,7 +9,7 @@
     height: 400px;
     padding: 0 15px;
 
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),url(/images/Header\ img.jpg);
+    background-image: linear-gradient(to right,$secondary-transperent-color),url(/images/Header\ img.jpg);
     background-size: cover;
 
 
@@ -22,27 +22,31 @@
     font-weight: 900;
     font-size: 26px;
     line-height: 42px;
+
+    letter-spacing: 0.06em;
     margin-bottom: 30px;
     text-align: center;
 
     
     
-    color: #FFFFFF;
+    color: $primary-white-color;
 }
 
 .hero-section__button{
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 30px;
     padding: 10px 24px;
 
-    background: #2196F3;
+    background:$primary-blue-color;
     border:0;
     border-radius: 4px;
 
     letter-spacing: 0.06em;
     
-    color: #FFFFFF;
+    color: $primary-white-color;
     cursor: pointer;
    
 }

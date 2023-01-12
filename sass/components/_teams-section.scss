@@ -1,59 +1,59 @@
 .teams-section{
-    background: #F5F4FA;
+    background: $primary-gray-bcg;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 .teams-container{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    @extend %container;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
 }
 
 
 .teams-section__list{
-    list-style: none;
+    @extend %list;
 
-        @media screen and (min-width: 1200px) {
-                display: flex;
-                flex-wrap: nowrap;
-            }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: -15%;
+     }
 
 }
+
 .teams-section__item{
-    background-color: #fff
-    ;
+    background-color:$primary-white-color;
+    width: 450px;
+    height: 622px;
+        
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+    border-radius: 0px 0px 4px 4px;
+    
     @media screen and (max-width: 767px) {
+        
         &:not(:last-child) {
          margin-bottom: 30px;
             }
         }
+    @media screen and (min-width: 1200px) {
+     
+            margin: 15%;
+        }
 
+}   
     
-    } 
 .teams-section__title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
+  
+
+    text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
-    text-align: center;
-    
-    color: #212121;
+ 
+    color:$primary-black-color;
  
 }
 .teams-section__name{
@@ -62,12 +62,13 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.03em;
+  
+
     text-align: center;
-    margin-bottom: 10px;
+    letter-spacing: 0.03em;
     margin-top: 30px;
     
-    color: #212121;
+    color:$primary-black-color;
 }
 .teams-section__job{
     font-family: 'Roboto';
@@ -76,10 +77,13 @@
     font-size: 16px;
     line-height: 19px;
 
+
+    text-align: center;
     letter-spacing: 0.03em;
     
-    color: #757575;
+    color: $primary-text-color;
     text-align: center;
+    margin-top: 10px;
 
 }
 .social-networks {
@@ -96,22 +100,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $primary-white-color;
 
     &:hover {
-        background-color: #2196F3;
+        background-color: $primary-blue-color;
     }
 
     
 }
 
-.teams-section__item{
-    width: 450px;
-    height: 622px;
-   
-    background: #FFFFFF;
-      
-    
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-}

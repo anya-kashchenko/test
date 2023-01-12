@@ -1,27 +1,15 @@
 .footer-container{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    @extend %container;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
 }
 .page-footer{
     background-color: #2F303A;
 
     padding-top: 60px;
     padding-bottom: 60px;
-  
+    
+ 
 
 
 }
@@ -37,34 +25,18 @@
     }
 }
 
-.footer-logo{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #FFFFFF;
-
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 20px;
-
-}
-.footer-logo span{
-  color: #2196F3;
-}
-
 .footer-list{
-    list-style: none;
+    @extend %list;
     padding: 0px;
     text-align: center;
 
   
+}
+
+.footer-item{
+    &:not(:last-child) {
+        margin-bottom: 8px;
+        }
 }
 .footer-address__link{
     font-family: 'Roboto';
@@ -72,24 +44,22 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+
+
+    text-align: center;
+    letter-spacing: 0.03em;
       
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+    @extend %link;
     
-    &:not(:last-child) {
-        margin-bottom: 8px;
-    }
-
 
     &:hover{
-        color:#FFFFFF;
+        color: $primary-white-color;
     }
 }
-.footer-networks{
-    text-align: center;
-}
+
 .footer-networks__list{
-    list-style: none;
+    @extend %list;
 }
 .footer-networks__title{
     font-family: 'Roboto';
@@ -97,8 +67,11 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
        
-    color: #FFFFFF;
+    color: $primary-white-color;
 
     margin-bottom: 20px;
     margin-top: 60px;
@@ -118,7 +91,9 @@
     @media screen and (min-width: 768px) {
         display: inline-block;
         padding-left: 76px;
+       
     }
+        
 }
 .footer-form__field{
     font-family: 'Roboto';
@@ -126,8 +101,11 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     
-    color: #FFFFFF;
+    color: $primary-white-color;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -137,19 +115,24 @@
 .footer-form__label{
     display: inline-block;
     margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: 700;
+
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $primary-white-color;
     text-align: center;
     
 }
 .footer-form__button{
-    font-family: 'Roboto';
+font-family: 'Roboto';
     font-style: normal;
-     font-weight: 700;
+    font-weight: 700;
     font-size: 16px;
     line-height: 30px;
+ 
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 
     width: 200px;
     height: 50px;
@@ -161,16 +144,17 @@
     letter-spacing: 0.06em;
     
     color: #FFFFFF;
-    background: #2196f3;
-    border-color: #2196f3;
+    background: $primary-blue-color;
+    border:0;
     border-radius: 4px;
-  margin-top: 20px;
+    margin-top: 20px;
 
 }
 .footer-form__button.span{
-    color: #FFFFFF;
+    color: $primary-white-color;
     margin-left: 31px;
 }
+
 .footer-networks__item{
     width: 44px;
         height: 44px;
@@ -185,7 +169,7 @@
         }
     
         &:hover {
-            background-color: #2196F3;
+            background-color:$primary-blue-color;
         }
 }
 .footer-networks__list{
@@ -198,6 +182,16 @@
     
 }
 .footer-form__input{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+   
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
     margin-right: 12px;
     padding: 15px 16px;
     width: 400px;
@@ -206,8 +200,8 @@
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    background-color: rgba(33, 150, 243, 0);
-    color: #FFFFFF;
+    background-color:#2F303A;
+    color: $primary-white-color;
 
    
     &::placeholder {
@@ -217,7 +211,7 @@
     }
 
     &:focus {
-        border-color:#2196F3;
+        border-color:$primary-blue-color;
         outline: none;
     }
 
@@ -226,5 +220,5 @@
 .footer-form__icon{
     margin-left: 12px;
     margin-right: 13px;
-    fill: #FFFFFF;
+    fill: $primary-white-color;
 }
