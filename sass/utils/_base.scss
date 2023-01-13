@@ -14,10 +14,8 @@ html {
 body{
     margin: 0;
     background-color: #FFFFFF;
-    
-    font-size: 14px;
     font-family: roboto, sans-serif;
-    letter-spacing: 0.03em;
+
     
 }
 h1,
@@ -35,4 +33,7 @@ body.modal-open {
 
 body.menu-open {
     overflow: hidden;
+}
+img {
+    display: block;
 }

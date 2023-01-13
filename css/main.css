@@ -13,9 +13,7 @@ html {
 body {
   margin: 0;
   background-color: #FFFFFF;
-  font-size: 14px;
   font-family: roboto, sans-serif;
-  letter-spacing: 0.03em;
 }
 
 h1,
@@ -33,6 +31,10 @@ body.modal-open {
 
 body.menu-open {
   overflow: hidden;
+}
+
+img {
+  display: block;
 }
 
 .card-set.list, .buttons-section__list, .footer-networks__list, .footer-list, .section-clients__list, .teams-section__list, .skills-section__list, .network-list, .auth-nav__list, .site-nav__list {
@@ -66,13 +68,13 @@ body.menu-open {
 }
 
 @media screen and (max-width: 1200px) {
-  .section-clients {
+  .section-clients, .teams-section, .skills-section {
     padding-bottom: 60px;
     padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-clients {
+  .section-clients, .teams-section, .skills-section {
     padding-bottom: 94px;
     padding-top: 94px;
   }
@@ -205,8 +207,6 @@ body.menu-open {
   padding: 0px;
   border: none;
   background-color: transparent;
-  width: 50px;
-  background-color: #2196F3;
 }
 @media screen and (min-width: 767px) {
   .button-menu {
@@ -214,21 +214,20 @@ body.menu-open {
   }
 }
 
-.button-menu.icon-cross {
+.button-menu .icon-cross {
   display: none;
 }
 
-.button-menu .is-open .icon-cross {
+.button-menu.is-open .icon-cross {
   display: block;
 }
 
-.button-menu .is-open .icon-menu {
+.button-menu.is-open .icon-menu {
   display: none;
 }
 
 .menu-svg {
-  width: 24px;
-  height: 20px;
+  width: 32px;
 }
 
 .menu-container.is-open {
@@ -236,7 +235,7 @@ body.menu-open {
 }
 
 .menu-container {
-  display: block;
+  display: none;
   position: absolute;
   top: 100%;
   left: 0%;
@@ -273,8 +272,6 @@ body.menu-open {
   margin-right: auto;
   height: 400px;
   padding: 0 15px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8)), url(/images/Header\ img.jpg);
-  background-size: cover;
 }
 
 .hero-section__title {
@@ -309,20 +306,12 @@ body.menu-open {
 }
 
 .skills-section__list {
-  padding: 60px 15px 60px 15px;
   margin: 0px;
 }
 @media screen and (min-width: 768px) {
   .skills-section__list {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .skills-section__list {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: -15px;
   }
 }
 
@@ -333,7 +322,13 @@ body.menu-open {
 }
 @media screen and (min-width: 768px) {
   .skills-section__item {
-    width: calc(100% - 40px)/4;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills-section__item {
+    width: calc((100% - 120px) / 4);
   }
 }
 
@@ -343,6 +338,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 120px;
 }
 
 .skills-section__title {
@@ -356,14 +352,25 @@ body.menu-open {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: #000;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 30px;
 }
 @media screen and (min-width: 480px) {
   .skills-section__title {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills-section__title {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills-section__title {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -377,29 +384,26 @@ body.menu-open {
   color: #757575;
   line-height: 1.71;
 }
-
-.skills-section__svg {
-  height: 120px;
+@media screen and (min-width: 768px) {
+  .skills-section__text {
+    text-align: start;
+  }
 }
 
 .teams-section {
   background: #F5F4FA;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .teams-section__list {
     display: flex;
-    flex-wrap: nowrap;
-    margin: -15%;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 .teams-section__item {
   background-color: #FFFFFF;
-  width: 450px;
-  height: 622px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 0px 0px 4px 4px;
 }
@@ -408,9 +412,15 @@ body.menu-open {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .teams-section__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .teams-section__item {
-    margin: 15%;
+    width: calc((100% - 120px) / 4);
   }
 }
 
@@ -424,6 +434,12 @@ body.menu-open {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .teams-section__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .teams-section__name {
@@ -451,11 +467,26 @@ body.menu-open {
   margin-top: 10px;
 }
 
+.team-section__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .team-section__image {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-section__image {
+    width: 270px;
+  }
+}
+
 .social-networks {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 16px;
+  padding-bottom: 30px;
 }
 
 .social-networks__link {
@@ -480,6 +511,7 @@ body.menu-open {
   display: inline-block;
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .section-clients__item {
@@ -492,9 +524,15 @@ body.menu-open {
     width: calc((100% - 90px) / 3);
   }
 }
+@media screen and (min-width: 1200px) {
+  .section-clients__item {
+    width: calc((100% - 180px) / 6);
+  }
+}
+
 .section-clients__link {
   width: 100%;
-  height: 100%;
+  height: 92px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -709,6 +747,23 @@ body.menu-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 767px) {
+  .footer-div {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer-div {
+    display: flex;
+  }
+}
+
 .footer-list {
   padding: 0px;
   text-align: center;
@@ -732,6 +787,30 @@ body.menu-open {
   color: #FFFFFF;
 }
 
+.footer-networks {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-networks {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-networks {
+    display: inline-block;
+    margin-left: 165px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-networks {
+    margin-left: 70px;
+    margin-top: 12px;
+    text-align: start;
+  }
+}
+
 .footer-networks__title {
   font-family: "Roboto";
   font-style: normal;
@@ -743,7 +822,11 @@ body.menu-open {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-  margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  .footer-networks__title {
+    margin-top: 60px;
+  }
 }
 
 .footer-form {
@@ -754,8 +837,15 @@ body.menu-open {
 }
 @media screen and (min-width: 768px) {
   .footer-form {
-    display: inline-block;
-    padding-left: 76px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 93px;
+    margin-top: 12px;
   }
 }
 
@@ -774,13 +864,24 @@ body.menu-open {
   margin-bottom: 20px;
   margin-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-form__field {
+    margin-bottom: 0;
+  }
+}
 
 .footer-form__label {
   display: inline-block;
   margin-bottom: 20px;
+  width: 100%;
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__label {
+    text-align: left;
+  }
 }
 
 .footer-form__button {
@@ -809,10 +910,6 @@ body.menu-open {
 .footer-form__button.span {
   color: #FFFFFF;
   margin-left: 31px;
-}
-
-.footer-networks {
-  position: absolute;
 }
 
 .footer-networks__item {
@@ -844,12 +941,12 @@ body.menu-open {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  width: 100%;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   margin-right: 12px;
   padding: 15px 16px;
-  width: 400px;
   margin: auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -864,6 +961,12 @@ body.menu-open {
 .footer-form__input:focus {
   border-color: #2196F3;
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer-form__icon {

@@ -1,5 +1,6 @@
 .skills-section{
    background-color:$primary-white-color;
+    @extend %section;
 
 }
 .skills-container{
@@ -8,33 +9,31 @@
 }
 .skills-section__list{
     @extend %list;
-    padding: 60px 15px 60px 15px;
     margin: 0px;
 
-        @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-         @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-wrap: nowrap;
-        margin: -15px;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
       
-        }
- 
-  
+    }
+   
 }
 .skills-section__item{
 
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
-            margin-bottom: 30px;
+        margin-bottom: 30px;
         }
     }
-        @media screen and (min-width: 768px) {
-        width: calc(100% - 4 * 10px)/4;
-        }
+
+    @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: calc((100% - 120px) / 4);
+    }
         
 
 
@@ -46,6 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 120px;
 }
 .skills-section__title{
     font-family: 'Roboto';
@@ -59,18 +59,24 @@
     
     margin-bottom: 10px;
     color: #000;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 30px;
  
 
     @media screen and (min-width: 480px) {
     
     display: flex;
-    justify-content: center;
-    }
-      
+    justify-content: space-around;
 
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: flex-start;
+        }
 }
 .skills-section__text{
     font-family: 'Roboto';
@@ -78,16 +84,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-
-
     letter-spacing: 0.03em;
-    
     color:$primary-text-color;
-
     line-height: 1.71;
-    
-}
-.skills-section__svg{
-height: 120px;
 
+    @media screen and (min-width: 768px) {
+    text-align: start;
+    }
+    
 }

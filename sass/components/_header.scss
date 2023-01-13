@@ -144,8 +144,7 @@
     padding: 0px;
     border: none;
     background-color: transparent;
-    width: 50px;
-    background-color: $primary-blue-color;
+  
 
     @media screen and (min-width:767px) {
             display: none;
@@ -155,19 +154,19 @@
 
     
 }
-.button-menu.icon-cross{
+.button-menu .icon-cross{
     display: none;
 }
-.button-menu .is-open .icon-cross{
+.button-menu.is-open .icon-cross{
     display: block;
 }
-.button-menu .is-open .icon-menu{
+.button-menu.is-open .icon-menu{
     display: none;
 }
 
 .menu-svg{
-    width: 24px;
-    height: 20px;
+    width: 32px;
+  
     
 }
 
@@ -176,7 +175,7 @@
 }
 .menu-container{
     
-    display: block;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0%;
