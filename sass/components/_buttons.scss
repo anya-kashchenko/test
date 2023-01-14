@@ -1,25 +1,49 @@
 .buttons-section{
     @extend %container;
 }
+
+.container-button{
+    padding-top: 40px;
+    
+    
+    
+    @media screen and (min-width: 767px) {
+      margin-bottom: 30px;  
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 60px;
+    }
+}
 .buttons-section__list{
     @extend %list;
+    display: flex;
+    @extend %list;
 
-    
-    margin-bottom: 40px;
-    margin-top: 60px;
+    @media screen and (max-width: 767.9px) {
+        flex-wrap: wrap;
+        margin-bottom: -15px;
+      
+    }
 
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+     
+       
+}
+.buttons-section__item{
+    display: inline-block;
+    margin-right: 8px;
+    @media screen and (min-width: 480px) {
+ 
     display: flex;
     gap: 8px;
     row-gap: 15px;
     justify-content: flex-start;
     flex-wrap: wrap;
-
- 
-       
-}
-.buttons-section__item{
-    display: inline-block;
-
+    margin-bottom: 15px;
+    }
 
     
 }
