@@ -15,14 +15,17 @@
 }
 .container-address{
     text-align: center;
-    @media screen and (max-width: 767px) {
-        
-    }
+   
 
     @media screen and (min-width: 768px) {
         display: inline-block;
-        padding-left: 76px;
+        margin-left: 60px;
     }
+  @media screen and (min-width: 1199px) {
+     
+      margin-left: 0px;
+    
+  }
 }
 .footer-div{
     @media screen and (max-width: 767px) {
@@ -50,7 +53,10 @@
     @extend %list;
     padding: 0px;
     text-align: center;
-
+    margin-top: 20px;
+    @media screen and (min-width: 1199px) {
+        text-align: start;
+    }
   
 }
 
@@ -132,22 +138,18 @@
 .footer-form {
    
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1199px) {
         margin-top: 60px;
         display: flex;
         flex-wrap: wrap;
             align-content: flex-end;
             justify-content: center;
     }
-    
-        @media screen and (max-width: 1199px) {
-          margin-top: 60px;
-    
-    
-        }
+
     @media screen and (min-width: 1200px) {
-        margin-top: -10px;
+        padding-top: 8px;
         display: flex;
+        align-items: center
     
         }
 }
@@ -168,9 +170,10 @@
     
     @media screen and (min-width: 1200px) {
         margin-bottom: 0;
+        padding-bottom: 20px;
     }
 
-          @media screen and (max-width: 1199px) {
+         @media screen and (max-width: 1199px) {
               margin-bottom: 20px;
     
     
@@ -189,6 +192,7 @@
 
     @media screen and (min-width: 1200px) {
         text-align: left;
+        margin-left: 80px;
     }
     
 }
@@ -199,16 +203,6 @@ font-family: 'Roboto';
     font-size: 16px;
     line-height: 30px;
  
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-
-    width: 200px;
-    height: 50px;
-
-    
     display: flex;
      align-items: center;
     justify-content: center;
@@ -219,6 +213,12 @@ font-family: 'Roboto';
     border:0;
     border-radius: 4px;
     margin-top: 20px;
+    padding: 10px 31px;
+
+        @media screen and (min-width: 1200px) {
+          margin-top: 14px;
+        
+            }
 
 
 }
@@ -297,6 +297,6 @@ font-family: 'Roboto';
 }
 .footer-form__icon{
     margin-left: 12px;
-    margin-right: 13px;
+
     fill: $primary-white-color;
 }
