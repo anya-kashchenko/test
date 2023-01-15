@@ -559,7 +559,12 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="form js-speaker-form">
+          <button class="button-close" data-modal-close>
+          <svg width="10px" height="10px">
+            <use href="./images/icon.svg/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+          <form class="form js-speaker-form">
           <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
           <label for="name" class="label-form">
             <span class="form__name">Ім'я</span>
@@ -611,13 +616,9 @@
           <div class="form-div">
             <button class="form__button" type="submit">Відправити</button>
           </div>
-        </form>
+          </form>
 
-        <button class="button-close" data-modal-close>
-          <svg width="10px" height="10px">
-            <use href="./images/icon.svg/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+      
       </div>
     </div>
     <script src="./js/menu.js"></script>
