@@ -9,18 +9,14 @@
     @extend %list;
     display: flex;
 
-
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
-        margin-bottom: -15px;
-      
+        margin-bottom: -15px; 
     }
 
     @media screen and (min-width: 768px) {
         justify-content: center;
-    }
-     
-       
+    }       
 }
 .buttons-section__item{
     @media screen and (max-width: 767.9px) {
@@ -29,13 +25,9 @@
 
     &:not(:last-child) {
         margin-right: 8px;
-    }
-
-    
+    }    
 }
 .buttons-section__button{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -51,8 +43,6 @@
     max-width:130px;
     border: 0;
  
-
-
     &:hover,
     &:focus{
 
@@ -65,7 +55,6 @@
 }
 .buttons-section__button--primary {
     background: $primary-blue-color;
-  
     border-radius: 4px;
     color: $primary-white-color;
 }
@@ -122,9 +111,6 @@
 
 .card-overlay__text {
     padding: 77px 24px;
-
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -137,8 +123,6 @@
 }
 
 .card-set__name {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
@@ -154,8 +138,6 @@
 }
 
 .card-set__group {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;

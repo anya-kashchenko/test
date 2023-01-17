@@ -29,15 +29,12 @@
 }
 .header-menu{
      @media screen and (min-width:768px) {
-        display: flex;
-        margin-left: 88px;
+      
     }
 }
 
 .site-nav__list{
     @extend %list;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
    
     text-align: center;
@@ -101,28 +98,23 @@ font-weight: 500;
 
 .auth-nav__list{
     @extend %list;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
-  
     line-height: 16px;
-
-
     letter-spacing: 0.02em;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+   
 
     @media screen and (max-width:767px) {
         font-size: 34px;
         line-height: 40px;
     }
     @media screen and (min-width:768px) {
-     
+    display: flex;
+        align-items: flex-start;
+        flex-direction: column;
         
     }
         @media screen and (min-width:1199px) {
-        flex-direction: row;
+       
  
         }
 
@@ -173,9 +165,7 @@ font-weight: 500;
 }
 }
 .network-list{
-    font-family: 'Roboto';
-    font-style: normal;
-     font-weight: 500;
+    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
        
@@ -280,7 +270,7 @@ font-weight: 500;
     @media screen and (min-width:768px) {
     display: flex;
         align-items: center;
-        margin-right: 96px;
+        margin-right: 240px;
 }
 }
 .contacts{

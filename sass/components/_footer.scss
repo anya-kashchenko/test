@@ -1,28 +1,21 @@
 .footer-container{
     @extend %container;
-
-
 }
 .page-footer{
     background-color: #2F303A;
 
     padding-top: 60px;
     padding-bottom: 60px;
-    
- 
-
 
 }
 .container-address{
     text-align: center;
-   
 
     @media screen and (min-width: 768px) {
         display: inline-block;
         margin-left: 60px;
     }
-  @media screen and (min-width: 1199px) {
-     
+    @media screen and (min-width: 1199px) {
       margin-left: 0px;
     
   }
@@ -31,11 +24,9 @@
     @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
-    
         }
     @media screen and (min-width: 767px) {
-        display: flex;
-            
+        display: flex;  
         }
     @media screen and (max-width: 1200px) {
      display: flex;
@@ -46,7 +37,6 @@
 .footer-navv{
     @media screen and (min-width: 1200px) {
             display: flex;
-    
         }
 }
 .footer-list{
@@ -57,7 +47,7 @@
     @media screen and (min-width: 1199px) {
         text-align: start;
     }
-  
+      
 }
 
 .footer-item{
@@ -71,14 +61,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-
-
-    text-align: center;
-    letter-spacing: 0.03em;
-      
     color: rgba(255, 255, 255, 0.6);
     @extend %link;
-    
 
     &:hover{
         color: $primary-white-color;
@@ -87,13 +71,10 @@
 .footer-networks{
  
     text-align: center;
-    @media screen and (min-width: 768px)
-        {margin-bottom: 60px;
-        
-
+    @media screen and (min-width: 768px){
+        margin-bottom: 60px;
     }
-    
-    
+
     @media screen and (min-width: 768px) {
         display: inline-block;
         margin-left: 165px;
@@ -101,7 +82,7 @@
         margin-top: 5px;
     }
     @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+    margin-left: 60px;
     margin-top: 12px;
     text-align: start;
     }
@@ -112,13 +93,10 @@
     @extend %list;
 }
 .footer-networks__title{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
        
     color: $primary-white-color;
@@ -128,34 +106,24 @@
 
     @media screen and (max-width: 767px) {
     margin-top: 60px;
-       
-
     }
-  
-   
 }
 
 .footer-form {
-   
-
-    @media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
         margin-top: 60px;
         display: flex;
         flex-wrap: wrap;
-            align-content: flex-end;
-            justify-content: center;
+        align-content: flex-end;
+        justify-content: center;
     }
 
     @media screen and (min-width: 1200px) {
-        
         display: flex;
         align-items: center
-    
-        }
+    }
 }
 .footer-form__field{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -173,19 +141,14 @@
         padding-bottom: 20px;
     }
 
-         @media screen and (max-width: 1199px) {
-              margin-bottom: 20px;
-    
-    
-          }
-    
-
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
 }
 .footer-form__label{
     display: inline-block;
     margin-bottom: 20px;
     width: 100%;
-
     text-transform: uppercase;
     color: $primary-white-color;
     text-align: center;
@@ -197,14 +160,12 @@
     
 }
 .footer-form__button{
-font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
  
     display: flex;
-     align-items: center;
+    align-items: center;
     justify-content: center;
     letter-spacing: 0.06em;
     
@@ -215,10 +176,9 @@ font-family: 'Roboto';
     margin-top: 20px;
     padding: 10px 31px;
 
-        @media screen and (min-width: 1200px) {
-          margin-top: 14px;
-        
-            }
+     @media screen and (min-width: 1200px) {
+        margin-top: 14px;
+    }
 
 
 }
@@ -229,19 +189,19 @@ font-family: 'Roboto';
 
 .footer-networks__item{
     width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background-color:rgba(255, 255, 255, 0.1);
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
         
-        &:not(:last-child) {
-            margin-right: 10px;
-        }
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
     
-        &:hover {
-            background-color:$primary-blue-color;
+    &:hover {
+    background-color:$primary-blue-color;
         }
 }
 .footer-networks__list{
@@ -249,13 +209,9 @@ font-family: 'Roboto';
     flex-wrap: nowrap;
     justify-content: center;
     padding: 0px;
-
-
-    
+  
 }
 .footer-form__input{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -297,6 +253,5 @@ font-family: 'Roboto';
 }
 .footer-form__icon{
     margin-left: 12px;
-
     fill: $primary-white-color;
 }
