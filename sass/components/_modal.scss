@@ -23,6 +23,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+   
     @media screen and (min-width: 480px) {
         max-width: 450px;
         width: 100%;
@@ -40,6 +41,22 @@
         width: 100%;
     }
 
+}
+.button-close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 50%;
+    background-color: $primary-white-color;
+    color: #000000;
+    cursor: pointer;
+    right: 5px;
+    top: 5px;
 }
 .form{
     position: absolute;
@@ -121,6 +138,10 @@
     align-items: center;
  
 }
+.checkbox-input{
+    margin-right: 5px;
+}
+
 .span-terms {
     color: $primary-blue-color;
     margin-left: 2px;
@@ -154,20 +175,7 @@
     display: flex;
     justify-content: center;
 }
-.button-close {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 50%;
-    background-color: $primary-white-color;
-    color: #000000;
-    cursor: pointer;
-}
+
 
 
 

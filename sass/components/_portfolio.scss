@@ -29,6 +29,7 @@
 }
 .buttons-section__button{
     font-weight: 500;
+
     font-size: 16px;
     line-height: 26px;
     padding: 6px 22px;
@@ -52,6 +53,10 @@
     color: $primary-white-color;
 }
        
+}
+.buttons-section__button--primary{
+    background: $primary-blue-color;
+    color: $primary-white-color;
 }
 
 

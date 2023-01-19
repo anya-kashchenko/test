@@ -185,7 +185,7 @@ img {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -35px;
+    bottom: -30px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -684,6 +684,9 @@ img {
 .section-clients__link:hover {
   border: 1px solid #2196F3;
 }
+.section-clients__icon .section-clients__link:hover {
+  fill: aqua;
+}
 
 .backdrop {
   position: fixed;
@@ -731,6 +734,23 @@ img {
     max-width: 528px;
     width: 100%;
   }
+}
+
+.button-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  right: 5px;
+  top: 5px;
 }
 
 .form {
@@ -812,6 +832,10 @@ img {
   align-items: center;
 }
 
+.checkbox-input {
+  margin-right: 5px;
+}
+
 .span-terms {
   color: #2196F3;
   margin-left: 2px;
@@ -842,21 +866,6 @@ img {
 .form-div {
   display: flex;
   justify-content: center;
-}
-
-.button-close {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
 }
 
 .page-footer {
@@ -1153,6 +1162,11 @@ img {
 .buttons-section__button:hover, .buttons-section__button:focus {
   background: #2196F3;
   border-radius: 4px;
+  color: #FFFFFF;
+}
+
+.buttons-section__button--primary {
+  background: #2196F3;
   color: #FFFFFF;
 }
 
