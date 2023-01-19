@@ -53,11 +53,7 @@
 }
        
 }
-.buttons-section__button--primary {
-    background: $primary-blue-color;
-    border-radius: 4px;
-    color: $primary-white-color;
-}
+
 
 
 
@@ -110,9 +106,9 @@
 }
 
 .card-overlay__text {
-    padding: 77px 24px;
+    padding: 49px 24px 77px 24px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 18px; 
     line-height: 28px;
     color: $primary-white-color;
 

@@ -89,6 +89,9 @@
 
 
 }
+.footer-networks__link{
+    display: flex;
+}
 .footer-networks__list{
     @extend %list;
 }

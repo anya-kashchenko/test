@@ -1,6 +1,6 @@
 .container {
     @extend %container;
-
+   
 }
 .page-header{
     border-bottom: 1px solid #ECECEC;
@@ -24,14 +24,10 @@
       
      }
     }
-    
+       
     
 }
-.header-menu{
-     @media screen and (min-width:768px) {
-      
-    }
-}
+
 
 .site-nav__list{
     @extend %list;
@@ -56,6 +52,10 @@ font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     }
+    
+    @media screen and (min-width:1199px) {
+        position: relative;
+    }
     .site-nav__link{
         color:$primary-black-color;
 
@@ -67,7 +67,22 @@ font-weight: 500;
     }
     .active{
     color: $primary-blue-color;
+    @media screen and (min-width: 768px) {
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -35px;
+               
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                background-color: $primary-blue-color ;
+            }
+
     }
+
+}
 }
 .site-nav__item{
     @media screen and (max-width:767px) {
@@ -76,24 +91,69 @@ font-weight: 500;
         }
     }
     @media screen and (min-width:768px) {
+        
          &:not(:last-child) {
                 margin-right: 51px;
                 }
 
+}
 
 }
-}
+
 .site-nav__link{
     @extend %link;
+    color: $primary-black-color;
    
     
-    
-    color:$primary-black-color;
- 
+
+   
     
 
+}
+.site-nav__link {
+position: relative;
 
-  
+    @media screen and (min-width: 768px) {
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -34px;
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $primary-blue-color ;
+            opacity: 0;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+    
+
+}
+.site-nav__link:hover::after{
+    opacity: 1;
+}
+.site-nav__link--primary{
+    color: $primary-blue-color;
+    text-decoration: none;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -35px;
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color:$primary-blue-color ;
+        }
+    }
+
+    
 }
 
 .auth-nav__list{
@@ -108,13 +168,12 @@ font-weight: 500;
         line-height: 40px;
     }
     @media screen and (min-width:768px) {
-    display: flex;
-        align-items: flex-start;
-        flex-direction: column;
+        margin-left: 55px;
         
     }
         @media screen and (min-width:1199px) {
-       
+       margin-left: 280px;
+       display: flex;
  
         }
 
@@ -146,7 +205,7 @@ font-weight: 500;
             margin-bottom: 32px;
         }
 }
-        @media screen and (min-width:768px) {
+        @media screen and (max-width:1199px) {
             &:not(:last-child) {
                 margin-bottom: 10px;
                 display: flex;
@@ -154,15 +213,15 @@ font-weight: 500;
         }
 
             
-    @media screen and (max-width:1199px) 
-    {&:not(:last-child) {
+    @media screen and (min-width:1200px) 
+    {
+            display: flex;
+                align-items: center;
+        &:not(:last-child) {
         margin-right: 30px;
     }
-       
-    
-
-
 }
+    
 }
 .network-list{
     font-weight: 500;
@@ -257,7 +316,11 @@ font-weight: 500;
         left: 0%;
         width: 100%;
     }
-
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+    }
+    
    
 }
 .navigation.contacts{
@@ -268,9 +331,8 @@ font-weight: 500;
   
     
     @media screen and (min-width:768px) {
-    display: flex;
-        align-items: center;
-        margin-right: 240px;
+
+
 }
 }
 .contacts{
