@@ -412,22 +412,22 @@ img {
   margin-right: auto;
   padding: 0 15px;
   height: 400px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(/images/Header\ img.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(../../images/Header-img.jpg);
   box-sizing: cover;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-container {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(/images/Header\ img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(../../images/Header-img@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero-container {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(/images/Header-tablet-img.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(../../images/Header-tablet-img.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-container {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(/images/Header-tablet-img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(../../images/Header-tablet-img@2x.jpg);
   }
 }
 @media screen and (min-width: 1199px) {
@@ -435,12 +435,12 @@ img {
     width: 100%;
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(/images/header-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(../../images/header-desktop.jpg);
   }
 }
 @media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
   .hero-container {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(//images/header-desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(../../images/header-desktop@2x.jpg);
   }
 }
 
