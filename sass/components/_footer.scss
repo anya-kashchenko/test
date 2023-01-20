@@ -178,6 +178,7 @@
     border-radius: 4px;
     margin-top: 20px;
     padding: 10px 31px;
+    cursor: pointer;
 
      @media screen and (min-width: 1200px) {
         margin-top: 14px;
@@ -256,5 +257,8 @@
 }
 .footer-form__icon{
     margin-left: 12px;
+    fill: $primary-white-color;
+}
+.social-networks__icon{
     fill: $primary-white-color;
 }

@@ -143,7 +143,7 @@ position: relative;
             content: "";
             position: absolute;
             left: 0;
-            bottom: -35px;
+            bottom: -36px;
             display: block;
             width: 100%;
             height: 4px;
@@ -179,7 +179,7 @@ position: relative;
         line-height: 40px;
     }
     @media screen and (min-width:768px) {
-        margin-left: 55px;
+        margin-left: 45px;
         
     }
         @media screen and (min-width:1199px) {
@@ -339,12 +339,7 @@ position: relative;
     width: 50px;
 }
 .navigation{
-  
-    
-    @media screen and (min-width:768px) {
 
-
-}
 }
 .contacts{
     
@@ -354,16 +349,8 @@ position: relative;
     flex-wrap: nowrap;
 }
 .auth-nav__icon{
-    margin-right: 8px;
-
-
-   
-
+   margin-right: 8px;
     @media screen and (max-width: 767px) {
         display: none;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-right: 10px;
-    }
+    }   
 }
