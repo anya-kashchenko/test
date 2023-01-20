@@ -134,13 +134,10 @@
     line-height: 36px;
 
 
-    letter-spacing: 0.06em;
+ 
     color: $primary-black-color;
 
-    margin-top: 20px;
-    margin-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
+   margin: 20px 24px 4px 20px;
 }
 
 .card-set__group {
@@ -148,10 +145,9 @@
     font-size: 16px;
     line-height: 30px;
     color: $primary-text-color;
-    padding-left: 24px;
-    padding-right: 24px;
+    
+    margin: 0 24px 0 24px;
     padding-bottom: 20px;
-    margin: 0;
 }
 
 
