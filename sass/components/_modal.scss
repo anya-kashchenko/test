@@ -83,6 +83,7 @@
         border-color: $primary-blue-color;
         outline: none;
     }
+   
 }
 .form__name{
     font-weight: 400;
@@ -111,8 +112,8 @@
     top: 30px;
     left: 10px;
 
-    .form__input &:focus { 
-        fill:$primary-blue-color;
+     &:hover {
+        fill: $primary-blue-color;
     }
 }
 .comment-text{

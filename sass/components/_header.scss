@@ -232,8 +232,15 @@ position: relative;
         margin-right: 30px;
     }
 }
-    
 }
+.auth-nav__icon{
+    fill: $primary-text-color;
+    .auth-nav__item:hover & {
+            fill: $primary-blue-color;
+        }
+}  
+
+
 .network-list{
     font-weight: 500;
     font-size: 18px;

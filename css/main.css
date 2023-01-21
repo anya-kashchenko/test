@@ -314,6 +314,13 @@ img {
   }
 }
 
+.auth-nav__icon {
+  fill: #757575;
+}
+.auth-nav__item:hover .auth-nav__icon {
+  fill: #2196F3;
+}
+
 .network-list {
   font-weight: 500;
   font-size: 18px;
@@ -638,6 +645,10 @@ img {
   padding-bottom: 30px;
 }
 
+.social-networks__icon {
+  fill: #AFB1B8;
+}
+
 .social-networks__link {
   width: 44px;
   height: 44px;
@@ -649,6 +660,9 @@ img {
 }
 .social-networks__link:hover {
   background-color: #2196F3;
+}
+.social-networks__link:hover .social-networks__icon {
+  fill: #FFFFFF;
 }
 
 .section-clients__title {
@@ -692,8 +706,12 @@ img {
 .section-clients__link:hover {
   border: 1px solid #2196F3;
 }
-.section-clients__icon .section-clients__link:hover {
-  fill: aqua;
+.section-clients__link:hover .section-clients__icon {
+  fill: #2196F3;
+}
+
+.section-clients__icon {
+  fill: #AFB1B8;
 }
 
 .backdrop {
@@ -813,7 +831,7 @@ img {
   top: 30px;
   left: 10px;
 }
-.form__input .form-icon:focus {
+.form-icon:hover {
   fill: #2196F3;
 }
 
@@ -1131,7 +1149,7 @@ img {
   fill: #FFFFFF;
 }
 
-.social-networks__icon {
+.social-networks__icon--footer {
   fill: #FFFFFF;
 }
 

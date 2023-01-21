@@ -87,7 +87,13 @@
     margin-top: 16px;
     padding-bottom: 30px;
 }
+.social-networks__icon{
+    fill: #AFB1B8;
 
+   
+
+
+}
 .social-networks__link {
     width: 44px;
     height: 44px;
@@ -100,5 +106,8 @@
     &:hover {
         background-color: $primary-blue-color;
     } 
+    &:hover .social-networks__icon {
+    fill: #FFFFFF;
+    }
 }
 
